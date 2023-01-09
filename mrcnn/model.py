@@ -23,6 +23,8 @@ import keras.layers as KL
 import keras.engine as KE
 import keras.models as KM
 
+tf.compat.v1.disable_eager_execution()
+
 from mrcnn import utils
 
 # Requires TensorFlow 1.3+ and Keras 2.0.8+.
