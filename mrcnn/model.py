@@ -23,6 +23,9 @@ import keras.layers as KL
 import keras.engine as KE
 import keras.models as KM
 
+tf.disable_v2_behavior()
+tf.compat.v1.get_default_graph()
+
 tf.compat.v1.disable_eager_execution()
 
 from mrcnn import utils
